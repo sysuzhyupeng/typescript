@@ -41,6 +41,14 @@ function testStr3(param1, param2, param3) {
     if (param3 === void 0) { param3 = 'c'; }
 }
 testStr3('a', 'b');
+function func1() {
+    var args = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        args[_i] = arguments[_i];
+    }
+    console.log();
+}
+func1('a', 'b', 'c');
 function error(message) {
     throw new Error(message);
 }

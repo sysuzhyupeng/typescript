@@ -8,7 +8,7 @@ typescript说明：
 typescript有以下特点：
 
  * 是js的超集，所有js文件可以直接搬到ts文件中运行
- * ts严格遵循ES6语法
+ * ts严格遵循ES6语法(基本都支持)
  * 由微软开发，同时angular-2的框架是由typescript编写
 
 typescript解决的问题

@@ -88,9 +88,21 @@ testStr3('a', 'b');
 	或者直接用...操作符，例子中的arg也就是类似于arguments
 */
 function func1(...args){
-	console.log(agrs);
+	console.log();
 }
 func1('a', 'b', 'c');
+/*
+	ES6的generator
+	function* a(){
+		console.log('start');
+		//加入断点
+		yield;
+		console.log('end');
+	}
+	var func = a();
+	next();
+	next();
+*/
 
 
 /*
