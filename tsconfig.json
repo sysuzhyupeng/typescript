@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": false
+    },
+    "files": [
+        "app/init.ts",
+        "app/greeter.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
