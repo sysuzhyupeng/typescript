@@ -14,7 +14,7 @@ typescript有以下特点：
 typescript解决的问题
 -
  * 支持ES6规范(可以说不必要，因为通过babel编译es6进行开发也同样可以，不需要使用ts除es6的其他语法)
- * IDE支持(比如一个string类型的变量，在赋值为number的时候，IDE会进行提示; 或者在重构时，修改方法的实现，调用的地方相应修改。然而我只用sublime...)
+ * IDE支持(比如一个string类型的变量，在赋值为number的时候，IDE会进行提示; 或者在重构时，修改方法的实现，调用的地方相应修改等功能。sublime目前也通过`typescript插件`部分支持)
  * 节省类型判断代码
 
 注意点
@@ -23,7 +23,11 @@ typescript解决的问题
 
 文件说明：
 -
- * 文档尝试在`app/init.ts`和`app/greeter.ts`中
+demo为一个tab选项卡组件
+
+ * `npm install`之后， 使用`npm start`在浏览器中预览效果
+ * 类文件在`app/tab.ts`, 对象实例化在`app/index.js`中
+ * 其他尝试在`app/init.ts`和`app/greeter.ts`中(参照官方文档的尝试)
  * 编译ts文件可以使用命令`tsc` + ts文件完成
  * 通过配置根目录下的`tsconfig.json`，直接输入tsc即可编译所有引入的ts文件
 
