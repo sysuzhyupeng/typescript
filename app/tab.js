@@ -55,3 +55,4 @@ var Tab = (function () {
     };
     return Tab;
 }());
+module.exports = Tab;

@@ -6,6 +6,7 @@ interface Option {
   	type ?: string;
 }
 
+//tab类声明
 class Tab {
 	//private属性不能在声明它的类的外部访问
 	private tabBtn: any;
@@ -20,8 +21,10 @@ class Tab {
 	    this.tabContent = this.getDom(option.tabCon);
 	    if(!this.tabBtn || !this.tabContent) return;
 	    //选中的类名
-	    this.selectedClassName = option.selected; 
+	    this.selectedClassName = option.selected;
+	    //事件绑定类型 
 	    this.eventType = option.type || 'click';
+	    //tab按钮的数量，和内容数量一致
 	    this.tabLen = this.tabBtn.length;
 	    //进行初始化
 	    this.init();
@@ -70,3 +73,5 @@ class Tab {
         this.bindEvent();
 	}
 }
+
+module.exports = Tab;
