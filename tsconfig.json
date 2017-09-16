@@ -8,7 +8,8 @@
     },
     "files": [
         "app/init.ts",
-        "app/greeter.ts"
+        "app/greeter.ts",
+        "app/tab.ts"
     ],
     "exclude": [
         "node_modules"

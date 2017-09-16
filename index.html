@@ -5,7 +5,45 @@
 	<title>typescript</title>
 </head>
 <body>
-	<div id="a">aa</div>
+	<div class="explan">
+        <strong>使用阅读 ：</strong> <br>
+        　　  {'tabBtn':'#tabA .tab-i','tabCon':'#tabA .tab-c','cur':'tab-cur'} 【必选】 <br>
+        　　（1）'tabBtn':'#tabA .tab-i','tabCon':'#tabA .tab-c'　　选择器：只支持 #id　.className，(ID + 空格 + 类名) 【必选】<br>
+        　　（2）'cur':'tab-cur'（默认） ：为切换按钮当前状态（类名）【必选】<br>
+        　　（3）'type':'mouseover'|| 'clicl' 默认是点击 【可选】
+    </div>
+    <h3>tabA</h3>
+    <pre>new LGY_tab({'tabBtn':'#tabA .tab-i',
+    'tabCon':'#tabA .tab-c',
+    'cur':'tab-cur'
+    });
+    </pre>
+    <div class="box" id="tabA">
+        <ul>
+            <li class="tab-i">btn-A</li>
+            <li class="tab-i">btn-B</li>
+        </ul>
+        <p class="tab-c">con-A</p>
+        <p class="tab-c">con-B</p>
+    </div>
+
+    <h3>tabB</h3>
+    <pre>new LGY_tab({'tabBtn':'#tabB .tab-i',
+    'tabCon':'#tabB .tab-k',
+    'cur':'tab-cur02',
+    'type':'mouseover'
+    });
+    </pre>
+    <div class="box" id="tabB">
+        <ul>
+            <li class="tab-j">btn-A</li>
+            <li class="tab-j">btn-B</li>
+            <li class="tab-j">btn-C</li>
+        </ul>
+        <p class="tab-k">con-A</p>
+        <p class="tab-k">con-B</p>
+        <p class="tab-k">con-C</p>
+    </div>
 	<script src="bundle.js"></script>
 </body>
 </html>

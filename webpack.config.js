@@ -23,6 +23,15 @@ var baseConfig = {
 				loader: 'css-loader'
 			}]
 		},{
+			test: /\.less$/,
+			use: [{
+				loader: 'style-loader'
+			}, {
+				loader: 'css-loader'
+			}, {
+				loader: 'less-loader'
+			}]
+		},{
 			//all files with a '.ts' or '.tsx'
 			test: /\.tsx?$/,
 			loader: "ts-loader" 
